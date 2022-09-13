@@ -5,6 +5,9 @@
 
 trigger:
 - main
+  paths:
+    include:
+    - src/Demo/*
 
 pool:
   vmImage: ubuntu-latest
