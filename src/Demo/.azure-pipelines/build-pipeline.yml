@@ -18,6 +18,6 @@ variables:
   buildConfiguration: 'Release'
 
 steps:
-- script: dotnet build --configuration $(buildConfiguration) /p=EnforceCodeStyleInBuild=true
+- script: dotnet build --configuration $(buildConfiguration)
   workingDirectory: $(Build.SourcesDirectory)/src/Demo
   displayName: 'dotnet build $(buildConfiguration)'
