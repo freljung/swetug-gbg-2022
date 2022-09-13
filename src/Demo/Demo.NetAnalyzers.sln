@@ -5,12 +5,17 @@ VisualStudioVersion = 17.0.31825.309
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo.NetAnalyzers", "Demo.NetAnalyzers\Demo.NetAnalyzers.csproj", "{F2970F0E-1225-40B8-9BB4-EC4E25C0A8AC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.NetAnalysers.NetCore31", "Demo.NetAnalysers.NetCore31\Demo.NetAnalysers.NetCore31.csproj", "{68E75A6D-807D-46CE-B961-72B8509D1B06}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo.NetAnalysers.NetCore31", "Demo.NetAnalysers.NetCore31\Demo.NetAnalysers.NetCore31.csproj", "{68E75A6D-807D-46CE-B961-72B8509D1B06}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5E719642-1B5F-4680-B62E-DF11F071F5AF}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
 		..\..\README.md = ..\..\README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".azure-pipelines", ".azure-pipelines", "{C4F0D0BD-2BFE-4909-A5CD-E05F2EE9C321}"
+	ProjectSection(SolutionItems) = preProject
+		.azure-pipelines\build-pipeline.yml = .azure-pipelines\build-pipeline.yml
 	EndProjectSection
 EndProject
 Global
