@@ -7,7 +7,7 @@
     <Nullable>enable</Nullable>
 	  
 	<!-- Modes: None, Default, Minimum, Recommended, All-->
-	<!--<AnalysisLevel>Latest-Default</AnalysisLevel>-->
+	<AnalysisLevel>Latest-All</AnalysisLevel>
 
 	<!--<TreatWarningsAsErrors>false</TreatWarningsAsErrors>-->
     <!--<CodeAnalysisTreatWarningsAsErrors>false</CodeAnalysisTreatWarningsAsErrors>-->
