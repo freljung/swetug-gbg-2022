@@ -27,6 +27,13 @@ Once the above is added to the csproj-file the will instead produce an error [CA
 
 ![CA1822 producing error when Analysis level is high enough](images/ca1822-when-warning-enabled.png)
 
+### Apply to specific code analysis category
+
+A specific code category can be specified separately using `<AnalysisMode<Category>>`, for example
+```xml
+<AnalysisModeNaming>All</AnalysisModeNaming>
+```
+Which will turn on all Naming rules analysers.
 
 ### .NET 5
 
@@ -36,3 +43,31 @@ If building for .NET 5 the compounded notion above cannot be used, and the mode 
 <AnalysisMode>All</AnalysisMode>
 ```
 
+## Code Style
+
+If code styles should be enforced during build set EnforceCodeStyleInBuild to true
+
+```xml
+<EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+```
+
+Or if you feel the csproj shouldn't contain this info it can also be passed as an
+msbuild property from command line.
+
+
+```cmd
+dotnet build /p:EnforceCodeStyleInBuild=true
+```
+
+Note that if you're testing this you might need to add the `--no-incremental` switch
+sinc code hasn't changed.
+
+
+
+
+# Sources
+
+This is mostly pieced together from [Microsoft docs](https://docs.microsoft.com).
+Examples:
+https://docs.microsoft.com/en-us/dotnet/core/project-sdk/msbuild-props#enforcecodestyleinbuild
+https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/categories
