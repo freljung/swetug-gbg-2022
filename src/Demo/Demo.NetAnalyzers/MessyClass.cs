@@ -7,7 +7,6 @@
     using System.Text;
     using System.Threading.Tasks;
     using Demo.NetAnalyzers.SomeOther.Namespace;
-
     public class MessyClass {
 
         private bool someFlag;
@@ -40,7 +39,7 @@
             using (var disposable = new DisposableClass()) {
                 
                 if (someFlag)
-                    Console.WriteLine("Using kan förenklas.");
+                    Console.WriteLine("Using can be simplified.");
             }
         }
 

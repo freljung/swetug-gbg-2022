@@ -63,11 +63,97 @@ Note that if you're testing this you might need to add the `--no-incremental` sw
 sinc code hasn't changed.
 
 
+# EditorConfig vs AnalyzerConfig, configuration files
 
+## Difference
+
+.editorconfig 
+
+## Precedense - Or who wins
+
+
+## Editor config
+
+```ini
+root = true
+
+[*.{cs,vb}]
+
+# All categories
+dotnet_analyzer_diagnostic.severity = none
+
+dotnet_analyzer_diagnostic.category-Design.severity = none
+dotnet_analyzer_diagnostic.category-Documentation.severity = none
+dotnet_analyzer_diagnostic.category-Globalization.severity = none
+dotnet_analyzer_diagnostic.category-Interoperability.severity = none
+dotnet_analyzer_diagnostic.category-Maintainability.severity = none
+dotnet_analyzer_diagnostic.category-Naming.severity = none
+dotnet_analyzer_diagnostic.category-Performance.severity = none
+dotnet_analyzer_diagnostic.category-SingleFile.severity = none
+dotnet_analyzer_diagnostic.category-Reliability.severity = none
+dotnet_analyzer_diagnostic.category-Security.severity = none
+dotnet_analyzer_diagnostic.category-Style.severity = none
+dotnet_analyzer_diagnostic.category-Usage.severity = none
+dotnet_analyzer_diagnostic.category-CodeQuality.severity = none
+dotnet_diagnostic.<rule>.severity = none
+```
+
+
+# Specific rule
+
+Example procuding warning for missing this or me identifier for local fields, properties, methods and events
+
+```xml
+dotnet_diagnostic.IDE0009.severity = warning
+dotnet_style_qualification_for_field = true
+dotnet_style_qualification_for_property = true
+dotnet_style_qualification_for_method = true
+dotnet_style_qualification_for_event = true
+```
+
+## AnalysisConfig 
+
+Can be any name, however .globalconfig will be implicitly added. Otherwise it has
+to be explicitly set in project file with
+
+```xml
+<ItemGroup>
+  <GlobalAnalyzerConfigFiles Include="<path_to_global_analyzer_config>" />
+</ItemGroup>
+```
+
+
+### Example 
+
+
+```ini
+is_global = true
+
+# dotnet_analyzer_diagnostic.severity = error
+# dotnet_analyzer_diagnostic.category-Design.severity = error
+# dotnet_analyzer_diagnostic.category-Documentation.severity = error
+# dotnet_diagnostic.CA1303.severity = none
+# dotnet_analyzer_diagnostic.category-Globalization.severity = none
+# dotnet_analyzer_diagnostic.category-Interoperability.severity = error
+# dotnet_analyzer_diagnostic.category-Maintainability.severity = error
+# dotnet_analyzer_diagnostic.category-Naming.severity = error
+# dotnet_analyzer_diagnostic.category-Performance.severity = error
+# dotnet_analyzer_diagnostic.category-SingleFile.severity = error
+# dotnet_analyzer_diagnostic.category-Reliability.severity = error
+# dotnet_analyzer_diagnostic.category-Security.severity = error
+# dotnet_analyzer_diagnostic.category-Style.severity = error
+# dotnet_analyzer_diagnostic.category-Usage.severity = error
+# dotnet_analyzer_diagnostic.category-CodeQuality.severity = error
+# dotnet_diagnostic.IDE0060.severity = error
+```
 
 # Sources
+
+
+Previously on Swetugg: https://youtu.be/9wyEARkUkXw
 
 This is mostly pieced together from [Microsoft docs](https://docs.microsoft.com).
 Examples:
 https://docs.microsoft.com/en-us/dotnet/core/project-sdk/msbuild-props#enforcecodestyleinbuild
-https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/categories
+https://
+

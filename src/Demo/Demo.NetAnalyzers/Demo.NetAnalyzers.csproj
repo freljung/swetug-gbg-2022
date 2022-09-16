@@ -1,20 +1,33 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <OutputType>Exe</OutputType>
-    <TargetFramework>net6.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-    <!--<EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>-->
-	  
-	<!-- Modes: None, Default, Minimum, Recommended, All-->
-	<!-- Level: latest, preview, 6.0, 6, 5.0, 5, and optionally -<mode> can be appended to each -->
-	<!--<AnalysisLevel>Latest-Default</AnalysisLevel>-->
-	  
-	<!--<AnalysisLevelNaming>Latest-All</AnalysisLevelNaming>-->
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
 
-	<!--<TreatWarningsAsErrors>false</TreatWarningsAsErrors>-->
-    <!--<CodeAnalysisTreatWarningsAsErrors>false</CodeAnalysisTreatWarningsAsErrors>-->
-  </PropertyGroup>
+		<!-- .NET 6 SDK -->
+		<!-- Level: latest, preview, 6.0, 6, 5.0, 5 -->
+		<!-- Modes: None, Default, Minimum, Recommended, All-->
+		<!--<AnalysisLevel>latest-All</AnalysisLevel>-->
+		
+		<!--<AnalysisLevelNaming>Latest-All</AnalysisLevelNaming>-->
+		<!--<AnalysisLevelPerformance>Latest-All</AnalysisLevelPerformance>-->
+		
+		<!--<AnalysisLevelCodeQuality>Latest-All</AnalysisLevelCodeQuality>-->
+
+		<!-- .NET 5 SDK -->
+		<!-- Level: latest, preview, 5.0, 5 -->
+		<!--<AnalysisLevel>latest</AnalysisLevel>-->
+		
+		<!-- Modes: AllDisabledByDefault, Default, Minimum, Recommended, AllEnabledByDefault -->
+		<!--<AnalysisMode>All</AnalysisMode>-->
+
+
+		<!--<EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>-->
+
+		<!--<TreatWarningsAsErrors>true</TreatWarningsAsErrors>-->
+		<!--<CodeAnalysisTreatWarningsAsErrors>false</CodeAnalysisTreatWarningsAsErrors>-->
+	</PropertyGroup>
 
 </Project>
