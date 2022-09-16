@@ -40,6 +40,8 @@ Which will turn on all Naming rules analysers.
 If building for .NET 5 the compounded notion above cannot be used, and the mode has to be declared in it's own element ```<AnalysisMode>```. If building with .NET 5 the above would instead be
 ```xml
 <AnalysisLevel>5</AnalysisLevel>
+
+<!-- Modes: AllDisabledByDefault, Default, Minimum, Recommended, AllEnabledByDefault -->
 <AnalysisMode>All</AnalysisMode>
 ```
 
@@ -156,4 +158,3 @@ This is mostly pieced together from [Microsoft docs](https://docs.microsoft.com)
 Examples:
 https://docs.microsoft.com/en-us/dotnet/core/project-sdk/msbuild-props#enforcecodestyleinbuild
 https://
-
