@@ -14,8 +14,6 @@
 		<!--<AnalysisLevelPerformance>Latest-All</AnalysisLevelPerformance>-->
 		
 		<!--<AnalysisLevelStyle>Latest-All</AnalysisLevelStyle>-->
-
-
 		<!--<EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>-->
 
 		<!--<TreatWarningsAsErrors>true</TreatWarningsAsErrors>-->

@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace ca2213
+﻿namespace ca2213
 {
     //<snippet1>
     public class TypeA : IDisposable
