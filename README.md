@@ -84,13 +84,16 @@ root = true
 # All categories
 dotnet_analyzer_diagnostic.severity = none
 
+# Some categories
+dotnet_analyzer_diagnostic.category-Naming.severity = none
+dotnet_analyzer_diagnostic.category-Performance.severity = none
+
+# The rest of the categories
 dotnet_analyzer_diagnostic.category-Design.severity = none
 dotnet_analyzer_diagnostic.category-Documentation.severity = none
 dotnet_analyzer_diagnostic.category-Globalization.severity = none
 dotnet_analyzer_diagnostic.category-Interoperability.severity = none
 dotnet_analyzer_diagnostic.category-Maintainability.severity = none
-dotnet_analyzer_diagnostic.category-Naming.severity = none
-dotnet_analyzer_diagnostic.category-Performance.severity = none
 dotnet_analyzer_diagnostic.category-SingleFile.severity = none
 dotnet_analyzer_diagnostic.category-Reliability.severity = none
 dotnet_analyzer_diagnostic.category-Security.severity = none

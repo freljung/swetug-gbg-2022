@@ -1,6 +1,6 @@
-using System;
+﻿using System;
 
-namespace ca1008
+namespace Demo.NetAnalyzers
 {
     // CA1008: Enums should have zero value
     // https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1008
