@@ -7,7 +7,7 @@ namespace CA1008
 
     public enum TraceLevel
     {
-        //Off = 0,
+        Off = 0,
         Error = 1,
         Warning = 2,
         Info = 3,
