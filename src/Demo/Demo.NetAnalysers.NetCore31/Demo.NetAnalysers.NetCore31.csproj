@@ -4,7 +4,6 @@
 		<OutputType>Exe</OutputType>
 		<TargetFramework>netcoreapp3.1</TargetFramework>
 
-		<!-- Ta bort kommentaren nedan för att aktivera standardanlyser: https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/overview#enabled-rules -->
 		<!--<EnableNETAnalyzers>true</EnableNETAnalyzers>-->
 		<!--<AnalysisLevel>latest-All</AnalysisLevel>-->
 	</PropertyGroup>

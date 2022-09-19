@@ -1,5 +1,7 @@
 is_global = true
 
+# dotnet_diagnostic.CA2015.severity = warning
+
 # dotnet_analyzer_diagnostic.severity = error
 # dotnet_analyzer_diagnostic.category-Design.severity = error
 # dotnet_analyzer_diagnostic.category-Documentation.severity = error
