@@ -9,11 +9,10 @@
 		<!-- Level: latest, preview, 6.0, 6, 5.0, 5 -->
 		<!-- Modes: None, Default, Minimum, Recommended, All-->
 		<!--<AnalysisLevel>latest-All</AnalysisLevel>-->
-		
+
 		<!--<AnalysisLevelNaming>Latest-All</AnalysisLevelNaming>-->
 		<!--<AnalysisLevelPerformance>Latest-All</AnalysisLevelPerformance>-->
 		
-		<!--<AnalysisLevelStyle>Latest-All</AnalysisLevelStyle>-->
 		<!--<EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>-->
 
 		<!--<TreatWarningsAsErrors>true</TreatWarningsAsErrors>-->
