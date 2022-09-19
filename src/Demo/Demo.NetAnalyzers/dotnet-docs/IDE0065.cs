@@ -1,6 +1,6 @@
 ﻿using System.Text;
 
-namespace ca2213
+namespace ide0065
 {
     public class UsingShouldBeInsdeNamespace
     {
