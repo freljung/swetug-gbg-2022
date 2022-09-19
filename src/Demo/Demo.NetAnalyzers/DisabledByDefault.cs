@@ -1,13 +1,13 @@
 ﻿using System;
 
-namespace Demo.NetAnalyzers
+namespace CA1008
 {
     // CA1008: Enums should have zero value
     // https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1008
 
     public enum TraceLevel
     {
-        Off = 0,
+        //Off = 0,
         Error = 1,
         Warning = 2,
         Info = 3,
