@@ -5,7 +5,7 @@ public class EnabledByDefault
     public void DoNotUseReferenceEquals()
     {
         int int1 = 1;
-        int int2 = 1;
+        int int2 = 2;
 
         // Violation occurs, returns false.
         Console.WriteLine(Object.ReferenceEquals(int1, int2));  // false
