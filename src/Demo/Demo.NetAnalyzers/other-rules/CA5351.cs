@@ -8,7 +8,7 @@ public class UsesBrokenEncryption
 {
     public string EncryptMD5(string thing)
     {
-        using var hashAlg = MD5.Create();
+        using MD5 hashAlg = MD5.Create();
         // Fix
         //using var hashAlg = SHA256.Create();
 

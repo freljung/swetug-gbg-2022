@@ -1,6 +1,6 @@
 ﻿namespace Demo.NetAnalyzers;
 
-abstract public class AbstractBaseClass
+public abstract class AbstractBaseClass
 {
     // CA1012: Abstract types should not have constructors
     // https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1012

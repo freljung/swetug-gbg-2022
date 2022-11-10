@@ -19,7 +19,7 @@ public class DisposableClass : IDisposable
     {
         Console.WriteLine(doSomethingText);
     }
-    
+
     protected virtual void Dispose(bool disposing)
     {
     }
